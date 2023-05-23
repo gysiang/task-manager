@@ -1,0 +1,20 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#submit-button {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: goldenrod;
+  border: "none";
+}
+
+.button:hover {
+  background-color: #002ead;
+  transition: 0.7s;
+}
