@@ -17,7 +17,7 @@ const handleSubmit = () => {
   const newTask = {
     name: taskName,
     description: taskDescription,
-    status: 'false'
+    status: 'pending'
   };
 
   setTasks([...tasks, newTask]);

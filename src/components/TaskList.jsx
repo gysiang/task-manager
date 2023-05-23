@@ -31,14 +31,20 @@ function TaskList({ tasks, setTasks }) {
         <option value="pending">Pending</option>
         <option value="completed">Completed</option>
       </select>
-      <table style={{ border: '1px solid', padding: '5px', margin: '5px', borderRadius: '2px', backgroundColor:'white',
-      width:'60%'
-      }}>
+      <table>
         <thead>
-          <tr>
-            <th>Completed</th>
-            <th>Task Name</th>
-            <th>Task Description</th>
+          <tr> 
+            <th style={{
+              paddingRight: '15px',
+              paddingLeft: '15px',
+            }}>Completed</th>
+            <th style={{
+              paddingRight: '15px',
+            }}>Task Name</th>
+            <th style={{
+              paddingRight: '15px',
+              paddingLeft: '15px',
+            }}>Task Description</th>
           </tr>
         </thead>
         <tbody>
@@ -51,7 +57,9 @@ function TaskList({ tasks, setTasks }) {
                   onChange={() => toggleTaskCompletion(index)}
                 />
               </td>
-              <td style={{ textDecoration: task.status === 'completed' ? 'line-through' : 'none' }}>{task.name}</td>
+              <td style={{ textDecoration: task.status === 'completed' ? 'line-through' : 'none'}}>
+                {task.name}
+              </td>
               <td style={{ textDecoration: task.status === 'completed' ? 'line-through' : 'none' }}>
                 {task.description}
               </td>

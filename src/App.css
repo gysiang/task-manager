@@ -14,7 +14,17 @@
   border: "none";
 }
 
-.button:hover {
-  background-color: #002ead;
-  transition: 0.7s;
+@media only screen and (max-width: 768px) {
+  table {
+    width: 100%;
+    font-size: 0.5rem;
+  }
+}
+
+table {
+  border: 1px solid;
+  margin: 5px;
+  border-radius: 2px;
+  background-color: white;
+  font-size: 14px;
 }
