@@ -12,3 +12,5 @@
 ## Tech Stack
 
 - Vite + React
+
+[Deployed Link](https://task-manager-one-psi.vercel.app//)
